@@ -1,0 +1,33 @@
+{
+  "name": "piroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeevem2007/piroll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergeevem2007/piroll/issues"
+  },
+  "homepage": "https://github.com/sergeevem2007/piroll#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.5"
+  }
+}
