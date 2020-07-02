@@ -1,0 +1,47 @@
+.testimonials
+  background-color: $primary
+  height: 500px
+  position: relative
+
+  &__content
+    height: 100%
+    list-style: none
+    display: flex
+    align-items: center
+    justify-content: center
+  &__item
+    display: none
+    &__active
+      display: block
+  &__text
+    text-align: center
+    font-size: 2.5rem
+    line-height: 3rem
+    color: #ffffff
+    max-width: 67rem
+    margin: 0 auto
+    margin-bottom: 3rem
+  &__author
+    text-align: center
+    font-size: 1rem
+    line-height: 3rem
+    text-transform: uppercase
+    color: #ffffff
+  &__dots
+    position: absolute
+    bottom: 61px
+    width: 100%
+    margin: 20px auto 0
+    display: flex
+    justify-content: center
+.dot
+  cursor: pointer
+  background-color: #b0e8e6
+  width: 6px
+  height: 6px
+  margin: 0 5px
+  border-radius: 50%
+  display: inline-block
+  &__active
+    transform: scale(1.5)
+    background-color: #ffffff
