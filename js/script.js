@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   'use strict';
 
-  $('.video__play').on('click' , function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
+  const videoPlayItem = document.querySelector('.video__play');
+
+  videoPlayItem.addEventListener('click', function onYouTubeIframeAPIReady() {
+    const player = new YT.Player('player', {
       height: '465',
       width: '100%',
       videoId: 'pwcmANSvtu4',
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'onReady': videoPlay,
       }
     });
-  })
+  });
     
   function videoPlay(event) {
     event.target.playVideo();
@@ -51,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const stopSlide = () => {
       clearInterval(interval);
     };
+
     slider.addEventListener('click', (event) =>{
       event.preventDefault();
       let target = event.target;
@@ -59,11 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       prevSlide(slide, currentSlide, 'testimonials__item__active');
       prevSlide(dot, currentSlide, 'dot__active');
+      console.log(3)
       if (target.matches('.dot')) {
         dot.forEach((elem, index) =>{
           if (elem === target) {
             currentSlide = index;
-            console.log(index);
           }
         });
       }
